@@ -5,6 +5,10 @@ class Person
     @name = name
   end
 
+  def greeting
+    puts "Hi my name is #{@name}"
+  end
+
 end
 
 
@@ -28,3 +32,16 @@ class Instructor < Person
 
 
 end
+
+chris = Instructor.new("Chris")
+chris.greeting
+chris.teach
+
+
+cristina = Student.new("Cristina")
+cristina.greeting
+cristina.learn
+
+# These dont work because they are not defined methods for those instances!
+# chris.learn
+# cristina.teach
